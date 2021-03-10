@@ -4,7 +4,7 @@ echo "########### connecting to server ###########"
 now=`date +"%Y-%m-%d"`
 
 echo "###########copy the the content###########"
-sudo mkdir /home/ec2-user/tmp/logs_content
+sudo mkdir -p /home/ec2-user/tmp/logs_content
 sudo cp /var/log/httpd/access_log /home/ec2-user/tmp/logs_content
 sudo cp /var/log/httpd/error_log /home/ec2-user/tmp/logs_content
 sudo cp -r /var/www/html/ /home/ec2-user/tmp/logs_content
