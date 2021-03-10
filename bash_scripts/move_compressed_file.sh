@@ -3,4 +3,4 @@
 now=`date +"%Y-%m-%d"`
 
 echo "###########copy files to admin server########"
-scp /home/ec2-user/logs_content.$now.tar.gz ec2-user@54.208.106.0:
+scp -i lseg ec2-user@54.197.194.240:/home/ec2-user/logs_content.$now.tar.gz .
